@@ -1,0 +1,555 @@
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: none;
+	text-decoration: none !important;
+	list-style: none; 
+}
+/*COLORES:
+Azul:#00507d
+Azul claro:#00c7dc
+Rojo:#ff6666
+Verde:#33cc65
+Verde2: #1abc9c;
+*/
+
+.Menu ul li:first-child:hover{
+	background:#00c7dc;	
+}
+.Menu ul li:nth-child(2):hover{
+	background:#00507d;	
+}
+.Menu ul li:nth-child(3):hover{
+	background:#33cc65;	
+}
+.Menu ul li:nth-child(4):hover{
+	background:#ff6666;	
+}
+.Menu ul li:nth-child(5):hover{
+	background:#1abc9c;	
+}
+
+@font-face{
+	src: url('../fonts/impact.ttf');
+	font-family: 'impact';
+}
+@font-face{
+	src: url('../fonts/agency-fb_[allfont.es]_0.ttf');
+	font-family: 'agency';
+}
+html{
+	scroll-behavior: smooth;
+}
+.Menu{
+	width: 50%;
+	background: rgb(0,0,0, 0.6);
+	border-radius: 10px;
+	position: fixed;
+	transform: translateX(1000%);
+	text-align:  center;
+	transition: ease-in-out .3s;
+}
+.activar{
+	transform: translateX(100%);
+}
+.Menu ul li a{
+	padding: 3px;
+	color: white;
+	font-size: 2em;
+	font-family: 'impact', sans-serif;
+}
+.contGeneral{
+	width: 1300%;
+	height: 100vh;
+	background: #00507d;
+	display: flex;
+	flex-direction: row;
+}
+.IconMenu{
+	position: fixed;
+	z-index: 999;
+	top: 20px;
+	right: 50px;
+	cursor: pointer;
+}
+.logo_esquina{
+	position: fixed;
+	z-index: 999;
+	top: 20px;
+	left: 50px;
+	display: none;
+}
+.Inicio{
+	width: 100vw;
+	background: #00c7dc;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+.logo{
+	margin: auto;
+}
+.boton{
+	width: 310px;
+	height: 55px;
+	border-radius: 10px 10px 10px 10px;
+	background: #00507d;
+	margin: auto;
+	text-align: center;
+}
+.boton a{
+	font-size: 2.2em;
+	color: white !important;
+	cursor: pointer;
+	font-family: 'impact' , sans-serif;
+}
+.Origen{
+	width: 100vw;
+	background:#00507d;
+}
+.InfoOrigen{
+	width: 50%;
+	margin: auto;
+	margin-top: 10%; 
+	justify-content: space-evenly;
+}
+.Carlos{
+	margin: 0;
+}
+.IntroOrg{
+	width: 50%;
+	margin-top: 5%;
+}
+.IntroOrg h2{
+	font-size: 3em;
+	color: white;
+	font-family: 'impact', sans-serif;
+}
+.IntroOrg p{
+	font-size: 1.2em;
+	line-height: 1.2;
+	color: white;
+	font-weight: 400;
+	text-align: justify;
+}
+.Mayas{
+	width: 100vw;
+	background: #00507d;
+	display: flex;
+	flex-direction: column;
+}
+.Titulo_Mayas{
+	text-align: center;
+	font-size: 65pt;
+	color: white;
+	font-family: 'agency fb', sans-serif;
+	margin-top: 3%;
+}
+.contMa{
+	width:40%;
+	margin: auto;
+	justify-content: space-between;
+}
+.btn{
+	width: 45px;
+	height: 45px;
+	background: white;
+	border-radius: 100%;
+	box-shadow: 0px 0px 0px 20px rgba(255,255,255,0.5);
+	animation: Sombra 2s ease-out;
+	animation-iteration-count: infinite;
+}
+@keyframes Sombra{
+	0%{
+		box-shadow: 0px 0px 0px 0px rgba(255,255,255,0);
+	}
+	30%{
+		box-shadow: 0px 0px 0px 20px rgba(255,255,255,0.3);
+	}
+	40%{
+		box-shadow: 0px 0px 0px 25px rgba(255,255,255,0.3);
+	}
+	60%{
+		box-shadow: 0px 0px 0px 30px rgba(255,255,255,0);
+	}
+	100%{
+		box-shadow: 0px 0px 0px 30px rgba(255,255,255,0);
+	}
+}
+.Reglas{
+	width: 100vw;
+	background: #00507d;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+
+.Titulo_Reglas {
+	text-align: center;
+	font-size: 65pt;
+	color: white;
+	font-family: 'agency fb', sans-serif;
+	margin-top: 3%;
+}
+.contRe{
+	width:40%;
+	margin: auto;
+	justify-content: center;
+}
+.PTorneo{
+	width: 100vw;
+	background: #00507d;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+
+.Titulo_Torneo{
+	text-align: center;
+	font-size: 65pt;
+	color: white;
+	font-family: 'agency fb', sans-serif;
+	margin-top: 3%;
+}
+.contPt{
+	width:40%;
+	margin: auto;
+	justify-content: space-between;
+}
+.Evolucion{
+	width: 100vw;
+	background: #33cc65;
+}
+.InfoEvo{
+	width: 50%;
+	margin: auto;
+	margin-top: 10%; 
+	justify-content: space-evenly;
+}
+.IntroEvo{
+	width: 50%;
+	margin-top: 5%;
+}
+.IntroEvo h2{
+	font-size: 3em;
+	color: white;
+	font-family: 'impact', sans-serif;
+}
+.IntroEvo p{
+	font-size: 1.2em;
+	line-height: 1.2;
+	color: white;
+	font-weight: 400;
+	text-align: justify;
+}
+.Fifa{
+	width: 100vw;
+	background: #33cc65;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+.contFIFA{
+	width:40%;
+	margin: auto;
+	justify-content: center;
+}
+.Titulo_FIFA{
+	text-align: center;
+	font-size: 65pt;
+	color: white;
+	font-family: 'agency fb', sans-serif;
+	margin-top: 3%;
+}
+.TNavidad{
+	width: 100vw;
+	background: #33cc65;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+.contTn{
+	width:50%;
+	margin: auto;
+	justify-content: space-evenly;
+}
+.Titulo_Navidad{
+	text-align: center;
+	font-size: 65pt;
+	color: white;
+	font-family: 'agency fb', sans-serif;
+	margin-top: 3%;
+}
+.CopaMundo{ 
+	width: 100vw;
+	background: #33cc65;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+.contCopa{
+	width:50%;
+	margin: auto;
+	justify-content: space-evenly;
+}
+.Titulo_Copa{
+	text-align: center;
+	font-size: 65pt;
+	color: white;
+	font-family: 'agency fb', sans-serif;
+	margin-top: 3%;
+}
+.video{
+	margin: auto;
+}
+.JuegosOlimpicos{
+	width: 100vw;
+	background: #ff6666;
+}
+.InfoJO{
+	width: 50%;
+	margin: auto;
+	margin-top: 10%; 
+	justify-content: space-evenly;
+}
+.IntroJO{
+	width: 50%;
+	margin-top: 5%;
+}
+.IntroJO h2{
+	font-size: 3em;
+	color: white;
+	font-family: 'impact', sans-serif;
+}
+.IntroJO p{
+	font-size: 1.2em;
+	line-height: 1.2;
+	color: white;
+	font-weight: 400;
+	text-align: justify;
+}
+.juegosOlmp{ 
+	width: 100vw;
+	background:  #ff6666;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+.contJuegos{
+	width:50%;
+	margin: auto;
+	justify-content: space-evenly;
+}
+.Titulo_olimp{
+	text-align: center;
+	font-size: 65pt;
+	color: white;
+	font-family: 'agency fb', sans-serif;
+	margin-top: 3%;
+}
+.Medalleria{ 
+	width: 100vw;
+	background:  #ff6666;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+.contMedallas{
+	width:50%;
+	margin: auto;
+	justify-content: space-evenly;
+}
+.Titulo_Med{
+	text-align: center;
+	font-size: 65pt;
+	color: white;
+	font-family: 'agency fb', sans-serif;
+	margin-top: 3%;
+}
+.Actualidad{
+	width: 100vw;
+	background: #1abc9c;
+}
+.InfoAct{
+	width: 50%;
+	margin: auto;
+	margin-top: 10%; 
+	justify-content: space-evenly;
+}
+.IntroAct{
+	width: 50%;
+	margin-top: 2%;
+}
+.IntroAct h2{
+	font-size: 3em;
+	color: white;
+	font-family: 'impact', sans-serif;
+}
+.IntroAct p{
+	font-size: 1.2em;
+	line-height: 1.2;
+	color: white;
+	font-weight: 400;
+	text-align: justify;
+}
+.barra{
+	width: 100vw;
+	position: fixed;
+	left: 10%;
+	top: 95%;
+	display: none;
+}
+
+.cuadro{
+	width: 80%;
+	border: solid 3px #00c7dc;
+	border-radius: 30px;
+	padding: 5px;
+}
+.carga{
+	background: #bdc3c7;
+	width: 10px;
+	height: 10px;
+	border-radius: 30px; 
+	transition: 1s;
+}
+.secciones{
+	width: 20px;
+	height: 20px;
+	border-radius: 100%;
+	background: white;
+	position: absolute;
+	top: 4.3px;
+	box-shadow: 0px 0px 0px 20px rgba(255,255,255,0.5);
+	animation: Sombra2 2s ease-out;
+	animation-iteration-count: infinite;
+}
+@keyframes Sombra2{
+	0%{
+		box-shadow: 0px 0px 0px 0px rgba(255,255,255,0);
+	}
+	30%{
+		box-shadow: 0px 0px 0px 20px rgba(255,255,255,0.3);
+	}
+	40%{
+		box-shadow: 0px 0px 0px 25px rgba(255,255,255,0.3);
+	}
+	60%{
+		box-shadow: 0px 0px 0px 30px rgba(255,255,255,0);
+	}
+	100%{
+		box-shadow: 0px 0px 0px 30px rgba(255,255,255,0);
+	}
+}
+.btn1{
+	position: absolute;
+	left:0.2%;
+	cursor: pointer;
+}
+.btn2{
+	width: 15px;
+	height: 15px;
+	border-radius: 100%;
+	background: white;
+	position: absolute;
+	top: 5px;
+	position: absolute;
+	left:8%;
+	cursor: pointer;
+}
+.btn3{
+	width: 15px;
+	height: 15px;
+	border-radius: 100%;
+	background: white;
+	position: absolute;
+	top: 5px;
+	position: absolute;
+	left:15%;
+	cursor: pointer;
+}
+.btn4{
+	width: 15px;
+	height: 15px;
+	border-radius: 100%;
+	background: white;
+	position: absolute;
+	top: 5px;
+	position: absolute;
+	left:22%;
+	cursor: pointer;
+}
+.btn5{
+	position: absolute;
+	left:29%;
+	cursor: pointer;
+}
+.btn6{
+	width: 15px;
+	height: 15px;
+	border-radius: 100%;
+	background: white;
+	position: absolute;
+	top: 5px;
+	position: absolute;
+	left:36%;
+	cursor: pointer;
+}
+.btn7{
+	width: 15px;
+	height: 15px;
+	border-radius: 100%;
+	background: white;
+	position: absolute;
+	top: 5px;
+	position: absolute;
+	left:43%;
+	cursor: pointer;
+}
+.btn8{
+	width: 15px;
+	height: 15px;
+	border-radius: 100%;
+	background: white;
+	position: absolute;
+	top: 5px;
+	position: absolute;
+	left:50%;
+	cursor: pointer;
+}
+
+.btn9{
+	position: absolute;
+	left:57%;
+	cursor: pointer;
+}
+.btn10{
+	width: 15px;
+	height: 15px;
+	border-radius: 100%;
+	background: white;
+	position: absolute;
+	top: 5px;
+	position: absolute;
+	left:64%;
+	cursor: pointer;
+}
+
+.btn11{
+	width: 15px;
+	height: 15px;
+	border-radius: 100%;
+	background: white;
+	position: absolute;
+	top: 5px;
+	position: absolute;
+	left:71%;
+	cursor: pointer;
+}
+
+.btn12{
+	position: absolute;
+	left:78%;
+	cursor: pointer;
+}
